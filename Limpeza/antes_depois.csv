@@ -1,0 +1,33 @@
+﻿variável,% nulos (bruto),% nulos (limpo),ação
+ID,0.0,0.0,Mantida; ignorada na deduplicação.
+Peso,2.5,17.6,"0 → NaN; fora de 0,5–150 kg → NaN; implausível pelas curvas do CDC (z modificado < -5 ou > 8) → NaN."
+Altura,0.0,31.5,0 → NaN; fora de 30–210 cm → NaN; implausível pelas curvas do CDC (z modificado < -5 ou > 4) → NaN.
+IMC,36.7,34.9,Original descartado; recalculado como Peso / (Altura/100)².
+Atendimento,7.6,removida,Usada para validar a IDADE (incl. seriais do Excel) e formar grupo_paciente; removida.
+DN,10.7,removida,Usada para validar a IDADE (incl. seriais do Excel) e formar grupo_paciente; removida.
+IDADE,11.6,0.0,"DN > Atendimento → NaN; linhas com IDADE nula, fora de 0–19 anos ou incompatível com Peso e Altura removidas; substituída pela idade calculada das datas."
+Convenio,31.9,removida,"Removida (~32% ausentes, siglas inconsistentes, sem relação clínica com o alvo)."
+PULSOS,9.3,0.2,"Padronizada (strip, maiúsculas/minúsculas, variantes unificadas)."
+PA SISTOLICA,60.0,56.9,Fora de 50–220 mmHg → NaN; PAS ≤ PAD → PAS e PAD NaN.
+PA DIASTOLICA,60.1,57.0,Fora de 20–140 mmHg → NaN; PAS ≤ PAD → PAS e PAD NaN.
+PPA,1.7,removida,"'Não Calculado' e '#VALUE!' → NaN; usada para validar a PPA recalculada (PPA_calc), que a substitui; removida."
+NORMAL X ANORMAL,9.1,0.0,Alvo. Variantes unificadas; linhas com alvo nulo removidas.
+B2,9.2,0.1,Padronizada.
+SOPRO,9.1,0.0,Padronizada (variantes de grafia e acentuação unificadas).
+FC,14.5,5.7,Texto → número; faixas → ponto médio; fora de 40–250 bpm → NaN.
+HDA 1,33.2,removida,Convertida nas colunas sint_*; removida.
+HDA2,96.8,removida,Convertida nas colunas sint_*; removida.
+SEXO,0.0,4.4,Variantes unificadas em M/F; 'Indeterminado' → NaN.
+MOTIVO1,8.2,removida,Convertida nas colunas motivo_*; removida.
+MOTIVO2,27.2,removida,Convertida nas colunas motivo_*; removida.
+grupo_paciente,—,0.0,Nova: mesma consulta (Atendimento e DN iguais); usar para dividir treino/teste por grupo.
+numero de episodios,—,0.0,Nova: nº de campos de HDA preenchidos.
+hda_ausente,—,0.0,Nova: 1 se HDA 1 e HDA2 estavam vazios.
+motivo_ausente,—,0.0,Nova: 1 se MOTIVO1 e MOTIVO2 estavam vazios.
+pa_medida,—,0.0,Nova: 1 se PAS e PAD foram medidas.
+z_altura,—,34.9,"Nova: z-score da altura (CDC), usado na PPA."
+PPA_PAS_calc,—,75.9,"Nova: classificação da PAS (Fourth Report, 2004)."
+PPA_PAD_calc,—,75.9,"Nova: classificação da PAD (Fourth Report, 2004)."
+PPA_calc,—,75.9,Nova: pior classificação entre PAS e PAD.
+sint_* (8 colunas),—,0.0,Novas: uma coluna 0/1 por valor de HDA.
+motivo_* (21 colunas),—,0.0,Novas: uma coluna 0/1 por valor de MOTIVO.
