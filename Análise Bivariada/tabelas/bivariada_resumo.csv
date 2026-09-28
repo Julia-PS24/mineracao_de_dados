@@ -1,0 +1,46 @@
+﻿variável,tipo,teste,n,p-valor,"significativo (α = 0,05)",resumo do efeito,diferença (p.p.),observação
+SOPRO,categórica,qui-quadrado,10592,"< 0,001",sim,"% Anormal: Sistólico = 95,9% vs Ausente = 10,0%",85.8,"Diastólico, Sistólico e diastólico (n = 10) fora do teste: n insuficiente"
+B2,categórica,qui-quadrado,10595,"< 0,001",sim,"% Anormal: Hiperfonética = 98,0% vs Normal = 39,7%",58.3,
+PULSOS,categórica,qui-quadrado,10566,"< 0,001",sim,"% Anormal: Femorais diminuídos = 94,3% vs Normais = 41,8%",52.5,Diminuídos (n = 13) fora do teste: n insuficiente
+MOTIVO1,categórica,qui-quadrado,10503,"< 0,001",sim,"% Anormal: Cardiopatia já estabelecida = 70,9% vs Parecer cardiológico = 25,2%",45.7,
+motivo_sopro,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 76,4% vs não = 33,8%",42.6,
+Peso,numérica (quartis),qui-quadrado,8737,"< 0,001",sim,"% Anormal: Q1 (1,2–9,0) = 63,1% vs Q4 (27,1–118,0) = 28,3%",34.8,
+motivo_cardiopatia_congenita,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 72,9% vs não = 39,6%",33.3,
+Altura,numérica (quartis),qui-quadrado,7268,"< 0,001",sim,"% Anormal: Q1 (40–70) = 62,0% vs Q4 (128–198) = 28,9%",33.1,
+motivo_cardiopatia_ja_estabelecida,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 70,9% vs não = 39,4%",31.5,
+IDADE,numérica (quartis),qui-quadrado,10603,"< 0,001",sim,"% Anormal: Q1 (0,0–1,0) = 61,2% vs Q4 (8,2–21,0) = 29,8%",31.4,
+motivo_parecer_cardiologico,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 56,6% vs sim = 25,2%",31.4,
+FC,numérica (quartis),qui-quadrado,9994,"< 0,001",sim,"% Anormal: Q4 (102–250) = 58,9% vs Q1 (43–80) = 28,4%",30.5,
+PPA (recalculada),categórica,qui-quadrado,2546,"0,010",sim,"% Anormal: HAS estágio 2 = 60,0% vs Pré-hipertensão = 32,5%",27.5,
+motivo_cirurgia,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 48,9% vs sim = 23,0%",25.9,
+motivo_suspeita_de_cardiopatia,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 58,9% vs não = 33,1%",25.8,
+IMC,numérica (quartis),qui-quadrado,6913,"< 0,001",sim,"% Anormal: Q1 (6,7–15,1) = 54,4% vs Q4 (18,8–42,4) = 32,3%",22.0,
+motivo_atividade_fisica,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 43,3% vs sim = 24,4%",18.9,
+motivo_check_up,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 43,3% vs sim = 26,8%",16.5,
+sint_desmaio_tontura,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 42,6% vs sim = 28,1%",14.5,
+motivo_has_dislipidemia_obesidade,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 42,6% vs sim = 28,2%",14.4,
+sint_cianose,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 56,2% vs não = 42,0%",14.2,
+motivo_dor_precordial,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 42,8% vs sim = 29,5%",13.3,
+sint_palpitacao,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 42,9% vs sim = 29,5%",13.3,
+motivo_cardiopatia_adquirida,binária,qui-quadrado,10603,"0,028",sim,"% Anormal: sim = 54,9% vs não = 42,2%",12.6,
+pa_medida,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 47,6% vs sim = 35,5%",12.1,
+hda_ausente,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 45,2% vs sim = 34,2%",10.9,
+sint_dor_precordial,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: não = 42,9% vs sim = 32,2%",10.6,
+sint_dispneia,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 51,7% vs não = 41,8%",9.9,
+sint_assintomatico,binária,qui-quadrado,10603,"< 0,001",sim,"% Anormal: sim = 46,6% vs não = 36,8%",9.8,
+PA SISTOLICA,numérica (quartis),qui-quadrado,4584,"< 0,001",sim,"% Anormal: Q1 (60–90) = 41,1% vs Q2 (92–100) = 32,5%",8.7,relação não monotônica: maior e menor % de Anormal fora das faixas extremas
+sint_ganho_de_peso,binária,qui-quadrado,10603,"0,151",não,"% Anormal: não = 42,4% vs sim = 34,7%",7.7,
+motivo_ausente,binária,qui-quadrado,10603,"0,146",não,"% Anormal: sim = 50,0% vs não = 42,3%",7.7,
+PA DIASTOLICA,numérica (quartis),qui-quadrado,4575,"0,005",sim,"% Anormal: Q1–Q2 (23–60) = 37,0% vs Q4 (72–120) = 30,7%",6.3,valores repetidos: quartis com o mesmo limite foram fundidos
+motivo_dispneia,binária,qui-quadrado,10603,"0,175",não,"% Anormal: não = 42,4% vs sim = 37,3%",5.1,
+motivo_palpitacao_taquicardia_arritmia,binária,qui-quadrado,10603,"0,079",não,"% Anormal: não = 42,5% vs sim = 37,8%",4.7,
+motivo_cianose,binária,qui-quadrado,10603,"0,627",não,"% Anormal: não = 42,4% vs sim = 39,8%",2.5,
+sint_outro,binária,qui-quadrado,10603,"0,671",não,"% Anormal: sim = 44,4% vs não = 42,3%",2.1,
+SEXO,categórica,qui-quadrado,10134,"0,070",não,"% Anormal: F = 42,9% vs M = 41,1%",1.8,
+motivo_outro,binária,qui-quadrado,10603,"0,815",não,"% Anormal: sim = 43,2% vs não = 42,3%",0.9,
+motivo_outro_detalhe,binária,qui-quadrado,10603,"0,942",não,"% Anormal: não = 42,4% vs sim = 42,1%",0.2,
+motivo_uso_de_cisaprida,binária,não testada,10603,—,—,"n insuficiente (apenas 8 casos ""sim"")",,menos de 30 casos positivos
+motivo_alteracoes_de_pulso_perfusao,binária,não testada,10603,—,—,"n insuficiente (apenas 5 casos ""sim"")",,menos de 30 casos positivos
+motivo_cansaco,binária,não testada,10603,—,—,"n insuficiente (apenas 6 casos ""sim"")",,menos de 30 casos positivos
+motivo_cardiopatia_na_familia,binária,não testada,10603,—,—,"n insuficiente (apenas 29 casos ""sim"")",,menos de 30 casos positivos
+motivo_cianose_e_dispneia,binária,não testada,10603,—,—,"n insuficiente (apenas 3 casos ""sim"")",,menos de 30 casos positivos

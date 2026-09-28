@@ -1,0 +1,10 @@
+# Ambiente virtual e configurações locais
+.venv/
+.claude/
+
+# Arquivos gerados pelo Jupyter e pelo Python
+.ipynb_checkpoints/
+__pycache__/
+
+# Pacote local (não faz parte do projeto)
+repo.zip

@@ -1,0 +1,11 @@
+Variável,n válido,% ausente,categ. brutas,categ. padronizadas,moda,% moda (÷ n total),% moda (÷ n válido)
+PULSOS,11679,9.3,7,5,Normais,89.6,98.7
+B2,11695,9.2,5,5,Normal,86.2,94.9
+SOPRO,11706,9.1,7,5,ausente,56.5,62.1
+PPA,2079,83.8,9,7,Normal,13.9,86.1
+NORMAL X ANORMAL (alvo),11705,9.1,4,2,Normal,52.4,57.6
+SEXO,11452,11.0,6,2,Masculino,52.3,58.7
+HDA 1,8603,33.2,8,8,Assintomático,51.0,76.3
+HDA2,407,96.8,8,8,Dispneia / Palpitacao,0.6,20.4
+MOTIVO1,11818,8.2,5,5,5 - Parecer cardiológico,41.6,45.3
+MOTIVO2,9377,27.2,16,16,5 - Cirurgia,22.8,31.4

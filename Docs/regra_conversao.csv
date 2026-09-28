@@ -1,0 +1,17 @@
+Variável,Valor encontrado,Tipo,Ação,n afetados
+Atendimento,dd/mm/aa,formato recuperável,→ data,11578
+Atendimento,número de 5 dígitos,serial do Excel,→ data (origem 30/12/1899),312
+DN,dd/mm/aa,formato recuperável,→ data,11253
+DN,número de 5 dígitos,serial do Excel,→ data (origem 30/12/1899),124
+DN,"ex.: ""4/anos"", ""18/10,1996""",formato inválido,→ ausente,120
+FC,"ex.: ""80-90"", ""120-160""",não numérico,→ ausente,16
+Peso,0,código de faltante,→ ausente,2609
+Altura,0,código de faltante,→ ausente,4460
+IMC,0,código de faltante,→ ausente,109
+PPA,Não Calculado,código de faltante,→ ausente,9081
+PPA,#VALUE!,código de faltante,→ ausente,1496
+PULSOS,"NORMAIS, AMPLOS",grafia inconsistente,→ forma padrão,3
+SOPRO,"sistólico, contínuo",grafia inconsistente,→ forma padrão,751
+NORMAL X ANORMAL (alvo),"anormal, Normais",grafia inconsistente,→ forma padrão,2
+SEXO,"M, F, masculino",grafia inconsistente,→ forma padrão,10621
+SEXO,Indeterminado,código de faltante,→ ausente,1417

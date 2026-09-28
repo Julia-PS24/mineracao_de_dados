@@ -1,0 +1,5 @@
+Variável,n válido,% ausente,problema principal
+ID,12873,0.0,identificador: 12873 valores distintos em 12873 registros; sem informação clínica
+Convenio,8765,31.9,374 grafias distintas (275 ignorando maiúsc./minúsc.) para os mesmos planos; sem relação clínica com o alvo
+DN,11377,11.6,"120 valores em formato inválido (ex.: '4/anos'), 124 datas gravadas como serial do Excel e 11 datas no futuro (ano de 2 dígitos lido no século errado)"
+Atendimento,11890,7.6,312 datas gravadas como serial do Excel e 1 data(s) no futuro
