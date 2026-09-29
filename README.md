@@ -100,7 +100,7 @@ As etapas seguem uma ordem fixa, porque cada uma depende das anteriores:
 - **Vazamento de informação:** SOPRO, B2, PULSOS e `motivo_*` fazem parte do próprio julgamento Normal/Anormal. `modelagem/colunas_por_grupo.csv` permite comparar o cenário A (todas as colunas) com o cenário B (sem achados do exame físico e sem motivo).
 - **`pa_medida`:** funciona como *proxy* da idade (OR ajustado por faixa etária ≈ 1); não indica doença.
 
-## Material para o relatório (máx. 5 folhas, sem código e sem prints)
+## Material para o relatório 
 
 | Seção | Arquivos |
 |---|---|
@@ -110,15 +110,6 @@ As etapas seguem uma ordem fixa, porque cada uma depende das anteriores:
 | Duas variáveis (FC × IDADE) | `figuras/fc_idade_antes_depois.png`, `figuras/fc_por_faixa_etaria.png`, `tabelas/fc_por_faixa.csv`, `figuras/idade_peso.png` |
 | Bivariada com o alvo | `figuras/bivariada_categoricas.png`, `figuras/bivariada_numericas.png`, `figuras/forca_associacao.png`, `tabelas/bivariada_resumo.csv` |
 | Transformações | `tabelas/transformacoes_completa.csv`, `figuras/correlacao_antropometricas.png`, `figuras/pa_ausente_por_idade.png` |
-
-## Quem fez cada parte
-
-| Parte | Autoria |
-|---|---|
-| Análise univariada | Grupo |
-| Limpeza (V1 e V2), bivariada (Partes 1 a 4) e evidências das transformações | Júlia |
-| Faixa etária 0–19 na limpeza | Jessyca |
-| Tamanho de efeito, ausência de PA × idade, IDADE × Peso, acréscimos à tabela de transformações, pré-processador e cópia local das tabelas do CDC (Partes 2.1, 3.1, 5 e 6) | Jamily |
 
 ## Referências
 
