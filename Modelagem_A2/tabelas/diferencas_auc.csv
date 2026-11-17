@@ -1,0 +1,4 @@
+﻿comparação,diferença de AUC,IC 95%,% das reamostragens > 0
+Gradient Boosting − Regressão Logística,0.01,"0,001 a 0,019",98.0
+Random Forest − Regressão Logística,0.0107,"0,001 a 0,020",99.0
+Gradient Boosting − Random Forest,-0.0007,"-0,007 a 0,005",43.0

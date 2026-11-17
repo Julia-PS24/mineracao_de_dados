@@ -1,0 +1,10 @@
+﻿cenário,atributos,modelo,AUC validação cruzada,desvio,AUC teste
+Com exame físico (47),47,Regressão Logística,0.9434,0.0045,0.9491
+Com exame físico (47),47,Random Forest,0.9504,0.0039,0.9547
+Com exame físico (47),47,Gradient Boosting,0.9502,0.0043,0.9555
+Sem exame físico (37),37,Regressão Logística,0.7643,0.0075,0.7923
+Sem exame físico (37),37,Random Forest,0.775,0.0115,0.803
+Sem exame físico (37),37,Gradient Boosting,0.7766,0.0133,0.8023
+Sem exame físico e sem motivo (19),19,Regressão Logística,0.6547,0.0128,0.6752
+Sem exame físico e sem motivo (19),19,Random Forest,0.6743,0.0202,0.6816
+Sem exame físico e sem motivo (19),19,Gradient Boosting,0.6738,0.0154,0.6836

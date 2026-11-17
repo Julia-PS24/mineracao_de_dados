@@ -1,0 +1,9 @@
+﻿item,valor
+consultas na base bruta,12.873
+variáveis na base bruta,21
+consultas na base limpa (A1),10.576
+exames anormais na base limpa,"4.485 (42,4%)"
+atributos codificados (A1),47
+atributos de entrada dos modelos (sem o exame físico),37
+consultas de treino / teste,8.460 / 2.116
+% Anormal no treino / teste,"42,4% / 42,4%"

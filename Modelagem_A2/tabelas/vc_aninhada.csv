@@ -1,0 +1,3 @@
+﻿modelo,protocolo,AUC média,desvio entre dobras,AUC no teste 80/20
+Regressão Logística,VC aninhada 5x3 (base inteira),0.7712,0.0116,0.7923
+Gradient Boosting,VC aninhada 5x3 (base inteira),0.7856,0.0127,0.8023

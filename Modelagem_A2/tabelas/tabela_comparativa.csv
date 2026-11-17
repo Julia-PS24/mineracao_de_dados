@@ -1,0 +1,5 @@
+﻿modelo,AUC validação cruzada (média ± dp),AUC teste,IC 95% (teste),limiar,sensibilidade,especificidade,precisão,F1,acurácia balanceada,% priorizados
+Dummy,"0,500 ± 0,000","0,500",—,—,—,—,—,—,—,—
+Regressão Logística,"0,764 ± 0,008","0,792","0,772 a 0,811","0,29","0,821","0,574","0,586","0,684","0,697","59,3"
+Random Forest,"0,775 ± 0,013","0,803","0,784 a 0,821","0,31","0,810","0,614","0,607","0,694","0,712","56,6"
+Gradient Boosting,"0,777 ± 0,015","0,802","0,784 a 0,821","0,30","0,810","0,624","0,614","0,698","0,717","56,0"

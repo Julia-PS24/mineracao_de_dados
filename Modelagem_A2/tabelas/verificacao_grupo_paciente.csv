@@ -1,0 +1,8 @@
+﻿verificação,valor
+consultas na base limpa,10576
+valores distintos de grupo_paciente,10407
+grupos com mais de uma consulta,160
+consultas nesses grupos,329
+maior grupo (consultas),4
+grupos multi-consulta com SEXO diferente,31
+grupos multi-consulta com laudo diferente,42

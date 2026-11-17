@@ -1,0 +1,38 @@
+﻿coluna,grupo,odds ratio,casos no treino
+motivo_sopro,Motivo do encaminhamento,3.215,1687
+motivo_cardiopatia_ja_estabelecida,Motivo do encaminhamento,1.944,808
+motivo_cardiopatia_congenita,Motivo do encaminhamento,1.757,724
+sint_dispneia,Sintomas (HDA),1.3,458
+sint_outro,Sintomas (HDA),1.283,114
+motivo_ausente,Motivo do encaminhamento,1.279,88
+sint_cianose,Sintomas (HDA),1.263,250
+motivo_cardiopatia_adquirida,Motivo do encaminhamento,1.226,67
+sint_assintomatico,Sintomas (HDA),1.217,4809
+FC_z,Frequência cardíaca,1.188,
+sint_ganho_de_peso,Sintomas (HDA),1.182,81
+pa_medida,Pressão arterial,1.181,3633
+motivo_suspeita_de_cardiopatia,Motivo do encaminhamento,1.176,3042
+PPA_ord,Pressão arterial,1.157,
+motivo_atividade_fisica,Motivo do encaminhamento,1.147,430
+motivo_outro,Motivo do encaminhamento,1.147,209
+ppa_calculada,Pressão arterial,1.144,2051
+SEXO_M,Sexo,1.12,5172
+PAS_z,Pressão arterial,1.039,
+PAD_z,Pressão arterial,0.962,
+motivo_raro,Motivo do encaminhamento,0.949,36
+sint_dor_precordial,Sintomas (HDA),0.927,398
+IMC_z,IMC,0.892,
+sexo_ausente,Sexo,0.868,374
+motivo_palpitacao_taquicardia_arritmia,Motivo do encaminhamento,0.849,298
+motivo_dispneia,Motivo do encaminhamento,0.845,157
+motivo_outro_detalhe,Motivo do encaminhamento,0.839,562
+sint_desmaio_tontura,Sintomas (HDA),0.822,152
+motivo_cianose,Motivo do encaminhamento,0.759,96
+IDADE_log_z,Idade,0.75,
+motivo_cirurgia,Motivo do encaminhamento,0.746,2126
+motivo_dor_precordial,Motivo do encaminhamento,0.74,271
+sint_palpitacao,Sintomas (HDA),0.647,327
+hda_ausente,Sintomas (HDA),0.604,2162
+motivo_has_dislipidemia_obesidade,Motivo do encaminhamento,0.572,168
+motivo_parecer_cardiologico,Motivo do encaminhamento,0.529,3825
+motivo_check_up,Motivo do encaminhamento,0.525,488

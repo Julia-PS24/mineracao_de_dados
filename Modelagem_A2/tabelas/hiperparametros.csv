@@ -1,0 +1,4 @@
+﻿modelo,hiperparâmetros escolhidos,combinações na grade,AUC média na validação cruzada
+Regressão Logística,C = 0.1,6,0.7643
+Random Forest,"max_features = sqrt, min_samples_leaf = 5",15,0.775
+Gradient Boosting,"learning_rate = 0.05, max_iter = 100, max_leaf_nodes = 31, min_samples_leaf = 20",36,0.7766

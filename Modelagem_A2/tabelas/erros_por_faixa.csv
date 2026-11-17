@@ -1,0 +1,6 @@
+﻿faixa etária,n,% Anormal,% priorizados,sensibilidade,especificidade,Anormais não encontrados,Normais priorizados
+0–1,543,60.0,85.3,0.963,0.313,12,149
+1–5,696,41.8,54.9,0.804,0.635,57,148
+5–10,515,35.3,45.2,0.67,0.667,60,111
+10–15,310,27.4,31.9,0.6,0.787,34,48
+15–19,52,25.0,15.4,0.462,0.949,7,2
