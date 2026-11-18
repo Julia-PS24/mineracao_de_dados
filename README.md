@@ -1,25 +1,26 @@
 # Atividade avaliativa da disciplina de Mineração de Dados
 
-## Discentes: Jamily Vieira, Júlia Souza e Yasmin Mageste
+## Discentes: Jamily Vieira, Júlia Souza, Jessyca Rodrigues e Yasmin Mageste
 
-Preparação e análise exploratória de uma base de consultas de cardiologia pediátrica (Avaliação A1: pré-processamento, limpeza e transformação).
+Estudo de caso *Condição cardíaca de crianças e adolescentes*: preparação e análise exploratória de uma base de consultas de cardiologia pediátrica (Avaliação A1: pré-processamento, limpeza e transformação) e modelagem preditiva do laudo (Avaliação A2: classificação Normal × Anormal).
 
 ## Base de dados
 
-`UCMF_raw.csv` reúne 12.873 consultas cardiológicas pediátricas do Real Hospital Português (Recife), em 21 colunas: medidas antropométricas, datas, pressão arterial, achados do exame físico, histórico da doença, sexo e motivo do encaminhamento.
+`UCMF_raw.csv` reúne 12.873 consultas cardiológicas pediátricas da Unidade de Cardiologia e Medicina Fetal (UCMF) do Real Hospital Português, em Recife-PE, anonimizadas com aprovação do Comitê de Ética do RHP, conforme a descrição do estudo de caso. São 21 colunas: medidas antropométricas, datas, pressão arterial, achados do exame físico, histórico da doença, sexo e motivo do encaminhamento.
 
 - **Variável-alvo:** `NORMAL X ANORMAL`.
-- **População:** 0 a 19 anos, como indica a tabela-mestra (`Docs/tabela-mestra-corrigida.xlsx`). A Academia Americana de Pediatria estende a idade-limite da pediatria até 21 anos (AAP, 1988); usar 0–21 manteria 27 pacientes a mais na base limpa.
+- **População:** 0 a 19 anos, recorte definido pelo professor no escopo do trabalho e registrado na tabela-mestra (`Docs/tabela-mestra-corrigida.xlsx`). A Academia Americana de Pediatria estende a idade-limite da pediatria até 21 anos (AAP, 1988); usar 0–21 manteria 27 pacientes a mais na base limpa.
 
 O dicionário de variáveis (tipo, unidade, faixa plausível e papel) está em `Docs/tabela-mestra-corrigida.xlsx`.
 
 ## Estrutura do repositório
 
 ```
-MD_A1/
+mineracao_de_dados/
 ├── UCMF_raw.csv                       base original (não é alterada)
 ├── requirements.txt                   dependências (versões testadas)
 ├── RESUMO_DAS_ALTERACOES.md           o que mudou na mescla e por quê
+├── decisoes_equipe_A2.md              decisões metodológicas do grupo na A2
 ├── Docs/
 │   ├── tabela-mestra-corrigida.xlsx   dicionário de variáveis
 │   ├── levantamento_qualidade_UCMFnew.xlsx  inventário de problemas de qualidade
@@ -42,14 +43,14 @@ MD_A1/
 ├── Modelagem_A2/                      Avaliação A2 (pasta final)
 │   ├── preprocessamento.py            PreprocessadorUCMF (o mesmo da A1) no formato do scikit-learn
 │   ├── modelagem_A2.ipynb             notebook da modelagem, com as saídas gravadas
+│   ├── gerar_relatorio_A2.py          gera a base do relatório a partir das tabelas exportadas
 │   ├── figuras/                       figuras do artigo (PNG, 600 dpi, largura final da coluna)
 │   └── tabelas/                       métricas, matriz de confusão, importâncias, deriva temporal
-├── relatorio_A2.docx / .pdf           relatório da A2 (gerado)
-└── relatorio_A2.tex                   mesmo relatório em IEEEtran, para compilar no Overleaf
+├── relatorio_A2.docx / .pdf / .tex    base do relatório da A2, gerada por gerar_relatorio_A2.py
+└── relatorio_A2_corrigido.docx / .tex versão final revisada do relatório da A2 (a submetida)
 ```
 
-As pastas `Modelagem/` e `Modelagem_julia/` guardam as duas modelagens exploratórias que deram
-origem à versão final e podem ser removidas: tudo o que o relatório usa está em `Modelagem_A2/`.
+tudo o que o relatório usa está em `Modelagem_A2/`.
 
 ## Como executar
 
@@ -184,22 +185,19 @@ matriz de confusão, erros por faixa etária e por motivo, limiar, importâncias
 coluna, razões de chance, régua do vazamento, deriva temporal e validação cruzada aninhada) e
 `Modelagem_A2/figuras/` (PNG a 600 dpi, na largura final de uma coluna ou da página do IEEE).
 
-**Relatório:** `relatorio_A2.docx` e `relatorio_A2.pdf` são gerados no layout de conferência do
-IEEE (carta, duas colunas, Times New Roman 10 pt) e convertidos pelo LibreOffice. O
-`relatorio_A2.tex` traz o mesmo texto em `\documentclass[conference]{IEEEtran}` e pode ser
-compilado no Overleaf com o template oficial. Nenhum número do relatório é digitado à mão: todos
-são lidos dos CSVs em tempo de geração, e as citações de figuras e tabelas são numeradas pelo
-próprio gerador.
-
-**Divisão do trabalho na A2:** a modelagem final é a junção de duas versões independentes, feitas
-em paralelo por Júlia (protocolo de validação, limiar orientado a sensibilidade, importância por
-grupo, dependência parcial e figuras no formato IEEE) e por Jamily (régua do vazamento, verificação
-do `grupo_paciente`, deriva temporal, validação cruzada aninhada e geração do relatório). As duas
-chegaram ao mesmo resultado no cenário de 19 atributos por caminhos independentes (0,680 e 0,682 de
-AUC), o que serviu de conferência cruzada.
+**Relatório:** `gerar_relatorio_A2.py` produz a base do relatório (`relatorio_A2.docx`, `.pdf` e
+`.tex`) no layout de conferência do IEEE (carta, duas colunas, Times New Roman 10 pt), lendo os
+números dos CSVs em tempo de geração. Essa base foi depois estruturada e revisada pelo grupo, com
+auxílio de IA, e a versão final submetida é `relatorio_A2_corrigido.docx`; o
+`relatorio_A2_corrigido.tex` traz o mesmo texto em `\documentclass[conference]{IEEEtran}`, com as
+referências na ordem de citação, e pode ser compilado no Overleaf (figuras em
+`Modelagem_A2/figuras/`). Rodar o gerador de novo recria a base, não a versão revisada. Os números
+da versão final vêm dos CSVs de `Modelagem_A2/tabelas/`, exceto a contagem de registros removidos na
+limpeza, que vem da A1 (`Limpeza/Limpeza_V2.ipynb`).
 
 ## Referências
 
+- Unidade de Cardiologia e Medicina Fetal (UCMF), Real Hospital Português (RHP). *UCMF_raw: consultas de cardiologia pediátrica* (conjunto de dados anonimizado). Recife-PE. Fornecido pelo professor da disciplina Mineração de Dados, Instituto de Informática, UFG, 2026.
 - American Academy of Pediatrics, Council on Child and Adolescent Health. *Age limits of pediatrics*. Pediatrics, 1988; 81(5): 736.
 - CDC – *Growth Charts* (2000), tabelas LMS: https://www.cdc.gov/growthcharts/
 - National High Blood Pressure Education Program Working Group. *The Fourth Report on the Diagnosis, Evaluation, and Treatment of High Blood Pressure in Children and Adolescents*. Pediatrics, 2004; 114(2 Suppl 4th Report): 555–576.
