@@ -181,10 +181,10 @@ Os coeficientes da regressão logística mostram a direção dos efeitos. Os enc
 \end{figure}
 
 \subsection{Robustez e limitações}
-A proporção de laudos anormais cai ao longo da série histórica, de 55,8\% em 2003 para 28,6\% em 2010, o que sugere mudança no perfil dos atendimentos. Como a validação cruzada sorteia as dobras e mistura os anos, o experimento foi repetido com uma divisão temporal, treinando até 2007 e validando de 2008 em diante (Tabela~\ref{tab:temporal}). Nessa divisão, a AUC do Gradient Boosting é de 0,764, cerca de 0,02 abaixo da validação cruzada aninhada (0,786), e a capacidade de ordenar se mantém. Já a regressão logística (0,771) supera o Gradient Boosting, o que reforça que a vantagem dos modelos complexos é frágil. A prevalência menor no período final (37,7\%, contra 42,4\% na base) não altera a AUC, mas faz um limiar fixado no passado perder precisão.
+A proporção de laudos anormais cai ao longo da série histórica, de 55,8\% em 2003 para 28,6\% em 2010, o que sugere mudança no perfil dos atendimentos. Como a validação cruzada sorteia as dobras e mistura os anos, o experimento foi repetido com uma divisão temporal, treinando até 2007 e validando de 2008 em diante (Tabela~\ref{tab:temporal}). Nessa divisão, a AUC do Gradient Boosting é de 0,764, cerca de 0,02 abaixo da validação cruzada aninhada (0,786). A capacidade de ordenar se mantém, e a pequena queda provavelmente reflete a mudança no perfil dos atendimentos e o treino menor (6.072 consultas). Já a regressão logística (0,771) supera o Gradient Boosting, o que reforça que a vantagem dos modelos complexos é frágil. A prevalência menor no período final (37,7\%, contra 42,4\% na base) não altera a AUC, mas faz um limiar fixado no passado perder precisão.
 
 \begin{table}[!t]
-\caption{AUC da regressão logística e do Gradient Boosting sob três protocolos: o teste sorteado, a validação cruzada aninhada na base inteira e uma divisão temporal. Como a AUC não depende da prevalência, a queda na divisão temporal provavelmente reflete a mudança no perfil dos atendimentos e o treino menor (6.072 consultas).}
+\caption{AUC da regressão logística e do Gradient Boosting em três protocolos de validação.}
 \label{tab:temporal}
 \centering
 \footnotesize
