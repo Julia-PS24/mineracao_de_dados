@@ -4,8 +4,9 @@ Registro das decisões tomadas pelo grupo em 16/11/2026, com a justificativa de 
 checar o número. Este arquivo é a origem do que o relatório afirma na Seção III (Metodologia) e na
 declaração de uso de IA (Seção VI).
 
-Todos os números estão em `Modelagem_A2/tabelas/`, e o relatório é **gerado a partir deles**:
-trocar uma decisão significa reexecutar dois comandos, não reescrever o texto.
+Todos os números estão em `Modelagem_A2/tabelas/`, e a base do relatório é **gerada a partir
+deles** por `Modelagem_A2/gerar_relatorio_A2.py`. A versão final (`relatorio_A2_revisado`) foi
+revisada pelo grupo sobre essa base.
 
 ---
 
@@ -49,8 +50,8 @@ A versão adotada corrige os três pontos:
 - a aninhada 5×3 sobre as 10.576 consultas confirma o resultado sem depender de corte algum.
 
 A confirmação foi útil: o teste dá 0,802, a validação cruzada do treino dá 0,777 e a aninhada dá
-**0,786 ± 0,013**. O relatório adota o número mais conservador e explica a diferença — a partição
-de teste saiu favorável. Reconhecer isso pesa mais a favor do que reportar o número maior.
+**0,786 ± 0,013**. O relatório adota esse valor intermediário, por usar a base inteira e não
+depender de um corte, e explica a diferença — a partição de teste saiu favorável. Reconhecer isso pesa mais a favor do que reportar o número maior.
 
 ---
 
@@ -126,8 +127,9 @@ zero: empate.
 ## 7. Divisão do trabalho
 
 A modelagem foi feita em paralelo por duas integrantes e depois reunida. A pasta final é
-`Modelagem_A2/`; `Modelagem/` e `Modelagem_julia/` são o material exploratório e podem ser
-apagadas. O que cada versão trouxe está registrado em `RESUMO_DAS_ALTERACOES.md`.
+`Modelagem_A2/`. O material exploratório não está na `main`: o da Júlia ficou no ramo
+`a2-modelagem` (pasta `Modelagem/`), e o da Jamily, fora do repositório. O que cada versão trouxe
+está registrado em `RESUMO_DAS_ALTERACOES.md`.
 
 As duas mediram o cenário de 19 atributos por caminhos independentes e chegaram a 0,680 e 0,682 de
 AUC (0,657 e 0,661 na logística). Dois pré-processadores escritos em separado e dois protocolos

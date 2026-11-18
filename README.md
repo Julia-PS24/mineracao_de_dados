@@ -48,7 +48,7 @@ mineracao_de_dados/
 │   ├── figuras/                       figuras do artigo (PNG, 600 dpi, largura final da coluna)
 │   └── tabelas/                       métricas, matriz de confusão, importâncias, deriva temporal
 ├── relatorio_A2.docx / .pdf / .tex    base do relatório da A2, gerada por gerar_relatorio_A2.py
-└── relatorio_A2_corrigido.docx / .tex / .pdf versão final revisada do relatório da A2 (a submetida)
+└── relatorio_A2_revisado.docx / .pdf / .tex  versão final do relatório da A2 (a submetida)
 ```
 
 tudo o que o relatório usa está em `Modelagem_A2/`.
@@ -189,10 +189,10 @@ coluna, razões de chance, régua do vazamento, deriva temporal e validação cr
 **Relatório:** `gerar_relatorio_A2.py` produz a base do relatório (`relatorio_A2.docx`, `.pdf` e
 `.tex`) no layout de conferência do IEEE (carta, duas colunas, Times New Roman 10 pt), lendo os
 números dos CSVs em tempo de geração. Essa base foi depois estruturada e revisada pelo grupo, com
-auxílio de IA, e a versão final submetida é `relatorio_A2_corrigido.docx`; o
-`relatorio_A2_corrigido.tex` traz o mesmo texto em `\documentclass[conference]{IEEEtran}`, com as
-referências na ordem de citação, e pode ser compilado no Overleaf (figuras em
-`Modelagem_A2/figuras/`). Rodar o gerador de novo recria a base, não a versão revisada. Os números
+auxílio de IA, e a versão final submetida é `relatorio_A2_revisado.docx` (o PDF,
+`relatorio_A2_revisado.pdf`, foi exportado dele pelo Word). O `relatorio_A2_revisado.tex` traz o
+mesmo texto em `\documentclass[conference]{IEEEtran}`, com as referências na ordem de citação, e
+pode ser compilado no Overleaf (figuras em `Modelagem_A2/figuras/`). Rodar o gerador de novo recria a base, não a versão revisada. Os números
 da versão final vêm dos CSVs de `Modelagem_A2/tabelas/`, exceto a contagem de registros removidos na
 limpeza, que vem da A1 (`Limpeza/Limpeza_V2.ipynb`).
 

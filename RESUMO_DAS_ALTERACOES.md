@@ -9,12 +9,12 @@ A A1 (limpeza, univariada e bivariada) **não foi alterada**: `UCMF_raw.csv` e
 ## 1. De duas modelagens para uma
 
 A A2 foi desenvolvida em paralelo por duas integrantes, com decisões diferentes, e depois reunida
-numa única versão. As pastas `Modelagem/` (Jamily) e `Modelagem_julia/` (Júlia) são o material
-exploratório que deu origem a `Modelagem_A2/`, a pasta final — e podem ser apagadas.
+numa única versão, `Modelagem_A2/`. O material exploratório não está na `main`: o da Júlia ficou no
+ramo `a2-modelagem` (pasta `Modelagem/`), e o da Jamily, fora do repositório.
 
 **O que cada versão contribuiu para a final:**
 
-| De `Modelagem_julia/` | De `Modelagem/` |
+| Da versão da Júlia | Da versão da Jamily |
 |---|---|
 | Protocolo de validação (divisão 80/20 + validação cruzada no treino, teste aberto uma vez só) | Régua do vazamento: cenários de 47, 37 e 19 atributos medidos lado a lado |
 | Pré-processador parametrizado por grupo de colunas (`excluir_grupos`) | Verificação da chave `grupo_paciente`, com a evidência que levou a abandoná-la |
@@ -75,8 +75,8 @@ holdout, mas corrigido em três pontos:
   não depende de corte nenhum.
 
 A confirmação foi informativa: o teste dá 0,802 e a validação cruzada do treino dá 0,777. A
-aninhada dá 0,786 ± 0,013 — valor intermediário. O relatório adota o número mais conservador e diz
-por quê.
+aninhada dá 0,786 ± 0,013 — valor intermediário. O relatório adota esse valor, por usar a base
+inteira e não depender de um corte, e explica que a partição de teste saiu favorável.
 
 ---
 
@@ -93,8 +93,8 @@ Modelagem_A2/
 └── tabelas/                  28 CSVs com todos os números do relatório
 ```
 
-Na raiz: `relatorio_A2.docx`, `relatorio_A2.pdf`, `relatorio_A2.tex`, `perguntas_arguicao_A2.md` e
-`decisoes_equipe_A2.md`.
+Na raiz: `relatorio_A2.docx`, `.pdf` e `.tex` (a base gerada pelo script),
+`relatorio_A2_revisado.docx`, `.pdf` e `.tex` (a versão final) e `decisoes_equipe_A2.md`.
 
 ## 4. Arquivos alterados
 
@@ -102,7 +102,6 @@ Na raiz: `relatorio_A2.docx`, `relatorio_A2.pdf`, `relatorio_A2.tex`, `perguntas
   do trabalho entre as duas modelagens; a lista de cuidados foi corrigida nos pontos de
   `grupo_paciente` e de vazamento.
 - **`requirements.txt`** — acrescentados `python-docx` e `pypdf` (geração e conferência do PDF).
-- **`perguntas_arguicao_A2.md`** — reescrito para o protocolo e os números finais (35 perguntas).
 
 Nada da A1 foi tocado.
 
@@ -127,9 +126,17 @@ Nada da A1 foi tocado.
 
 ---
 
-## 7. Pendente
+## 6. Versão final do relatório
 
-- **Publicar no GitHub.** O relatório traz no rodapé da primeira página o link para o repositório
-  público, e o conteúdo da A2 ainda não foi enviado. Depende de autorização.
-- **Apresentação** (`apresentacao_A2.pptx`), para a semana de 18 a 27/11.
-- **Apagar `Modelagem/` e `Modelagem_julia/`** depois que a equipe confirmar a versão final.
+`gerar_relatorio_A2.py` gera a base do relatório (`relatorio_A2.*`). A versão final,
+`relatorio_A2_revisado.docx` (com o PDF exportado dele e o mesmo texto em
+`relatorio_A2_revisado.tex`), foi revisada pelo grupo sobre essa base:
+
+- a base de dados entrou como referência [1], e as referências passaram à ordem de citação;
+- entraram as contagens da limpeza da A1 e os hiperparâmetros escolhidos;
+- a divisão temporal passou a ser comparada com a validação cruzada aninhada (0,786), e não com o
+  teste; como a AUC não depende da prevalência, a queda é atribuída à mudança no perfil dos
+  atendimentos e ao treino menor;
+- a Tabela IV ganhou a linha da validação cruzada aninhada, e o texto foi revisto.
+
+Rodar o gerador de novo recria a base, não a versão revisada.

@@ -11,3 +11,6 @@ nbconvert==7.17.1
 nbformat==5.11.1
 ipykernel==7.3.0
 openpyxl==3.1.5
+# Geração do relatório (Modelagem_A2/gerar_relatorio_A2.py)
+python-docx>=1.1
+pypdf>=4.0
