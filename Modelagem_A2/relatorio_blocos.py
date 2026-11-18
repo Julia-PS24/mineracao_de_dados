@@ -15,7 +15,7 @@ import pandas as pd
 
 TITULO = ('Vazamento de informação na triagem de laudos '
           'cardiológicos pediátricos: o que sobra quando o exame físico sai')
-AUTORAS = ['Jamily Vieira', 'Jessyca Rodrigues', 'Júlia Souza', 'Yasmin Mageste']
+AUTORAS = ['Jamily Vieira', 'Júlia Souza', 'Yasmin Mageste']
 AFILIACAO = 'Instituto de Informática, Universidade Federal de Goiás'
 DISCIPLINA = 'Mineração de Dados — Avaliação A2'
 REPOSITORIO = 'https://github.com/Julia-PS24/mineracao_de_dados'

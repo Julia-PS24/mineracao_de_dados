@@ -124,19 +124,6 @@ zero: empate.
 
 ---
 
-## 7. Divisão do trabalho
-
-A modelagem foi feita em paralelo por duas integrantes e depois reunida. A pasta final é
-`Modelagem_A2/`. O material exploratório não está na `main`: o da Júlia ficou no ramo
-`a2-modelagem` (pasta `Modelagem/`), e o da Jamily, fora do repositório. O que cada versão trouxe
-está registrado em `RESUMO_DAS_ALTERACOES.md`.
-
-As duas mediram o cenário de 19 atributos por caminhos independentes e chegaram a 0,680 e 0,682 de
-AUC (0,657 e 0,661 na logística). Dois pré-processadores escritos em separado e dois protocolos
-diferentes chegando ao mesmo número é a conferência cruzada mais forte do trabalho.
-
----
-
 ## Como funciona cada algoritmo, e por que ele importa aqui
 
 **Classe majoritária — piso, não é um modelo.** Prevê sempre "normal" e não aprende nada. Serve

@@ -1,6 +1,9 @@
 # Atividade avaliativa da disciplina de Mineração de Dados
 
-## Discentes: Jamily Vieira, Júlia Souza, Jessyca Rodrigues e Yasmin Mageste
+## Discentes
+
+- **Avaliação A1:** Jamily Vieira, Jessyca Rodrigues, Júlia Souza e Yasmin Mageste
+- **Avaliação A2:** Jamily Vieira, Júlia Souza e Yasmin Mageste
 
 Estudo de caso *Condição cardíaca de crianças e adolescentes*: preparação e análise exploratória de uma base de consultas de cardiologia pediátrica (Avaliação A1: pré-processamento, limpeza e transformação) e modelagem preditiva do laudo (Avaliação A2: classificação Normal × Anormal).
 

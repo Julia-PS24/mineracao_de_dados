@@ -1,6 +1,6 @@
 """Pré-processamento da base UCMF para a Avaliação A2.
 
-Este módulo junta as duas modelagens feitas pelo grupo:
+Este módulo reúne:
 
 - a classe `PreprocessadorUCMF` é a da Parte 6 da A1 ("Análise Bivariada/analise_bivariada.ipynb"),
   reescrita como transformador do scikit-learn (`fit`/`transform`) para entrar num `Pipeline` e ser
