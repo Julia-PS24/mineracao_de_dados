@@ -44,6 +44,7 @@ mineracao_de_dados/
 │   ├── preprocessamento.py            PreprocessadorUCMF (o mesmo da A1) no formato do scikit-learn
 │   ├── modelagem_A2.ipynb             notebook da modelagem, com as saídas gravadas
 │   ├── gerar_relatorio_A2.py          gera a base do relatório a partir das tabelas exportadas
+│   ├── relatorio_blocos.py            texto e números do relatório (lê as tabelas/); usado por gerar_relatorio_A2.py
 │   ├── figuras/                       figuras do artigo (PNG, 600 dpi, largura final da coluna)
 │   └── tabelas/                       métricas, matriz de confusão, importâncias, deriva temporal
 ├── relatorio_A2.docx / .pdf / .tex    base do relatório da A2, gerada por gerar_relatorio_A2.py
