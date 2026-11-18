@@ -48,7 +48,7 @@ mineracao_de_dados/
 │   ├── figuras/                       figuras do artigo (PNG, 600 dpi, largura final da coluna)
 │   └── tabelas/                       métricas, matriz de confusão, importâncias, deriva temporal
 ├── relatorio_A2.docx / .pdf / .tex    base do relatório da A2, gerada por gerar_relatorio_A2.py
-└── relatorio_A2_corrigido.docx / .tex versão final revisada do relatório da A2 (a submetida)
+└── relatorio_A2_corrigido.docx / .tex / .pdf versão final revisada do relatório da A2 (a submetida)
 ```
 
 tudo o que o relatório usa está em `Modelagem_A2/`.
